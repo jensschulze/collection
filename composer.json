@@ -1,0 +1,30 @@
+{
+    "name": "jensschulze/collection",
+    "type": "library",
+    "description": "Collections",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jens Schulze",
+            "email": "info@jensschulze3000.de"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.1",
+        "phpstan/phpstan": "^0.11.5"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "JensSchulze\\Collection\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JensSchulze\\Collection\\Tests\\": "tests/"
+        }
+    }
+}
