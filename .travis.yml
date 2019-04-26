@@ -1,0 +1,18 @@
+language: php
+php:
+    - '7.2'
+    - '7.3'
+    - '7.4snapshot'
+before_install:
+    - composer self-update
+install:
+    - rm -f composer.lock
+    - composer install --no-interaction
+jobs:
+    include:
+        - stage: test
+    allow_failures:
+        - php: 7.4snapshot
+cache:
+    directories:
+        - $HOME/.composer/cache
